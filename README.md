@@ -17,6 +17,7 @@ this example pings the IP 172.217.12.14 roughly once a second, for a minute.  it
 
 ```
 pi@pi:~ $ python3 pingNdnsLogger.py  172.217.12.14  205.171.2.25
+```
 
 Here is the 1 second logging result.  It's always interesting to see the FQDN google uses for this, 1 of many google.com IPs.  the FQDN (name) for this IP is den02s02-in-f14.1e100.net .
 
@@ -73,6 +74,7 @@ Here is the 1 second logging result.  It's always interesting to see the FQDN go
 2020-03-09 19:44:02.342944 ,pinged, 172.217.12.14 , 25.6 ,DNSsuccessfullyreversed, den02s02-in-f14.1e100.net
 2020-03-09 19:44:03.444087 ,pinged, 172.217.12.14 , 25.3 ,DNSsuccessfullyreversed, den02s02-in-f14.1e100.net
 2020-03-09 19:44:04.571062 ,pinged, 172.217.12.14 , 25.8 ,DNSsuccessfullyreversed, den02s02-in-f14.1e100.net
+```
 
 ##### how-to cron the application to run every minute, forever
 If you run this script for long periods of time, you might change-up the IP you're pinging.  
