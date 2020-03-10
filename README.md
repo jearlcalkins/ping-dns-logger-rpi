@@ -77,7 +77,7 @@ Here is the 1 second logging result.  It's always interesting to see the FQDN go
 ```
 
 ##### how-to cron the application to run every minute, forever
-If you run this script for long periods of time, you might change-up the IP you're pinging.  
+If you run this script for long periods of time, you might periodically, change-up the IP you're pinging.  
 
 ```
 * * * * * python3 /home/pi/pingNdnsLogger.py 172.217.12.14 205.171.2.25  >> pingNdnsLogging.txt
