@@ -4,10 +4,10 @@
 the application is written in python 3
 
 ##### raspberry pi environment
-Raspberry Pi 3 Model B Plus Rev 1.3
-Raspbian GNU/Linux 9 (stretch)
-Python 3.5.3
-connectivity is via ethernet eth0
+1. Raspberry Pi 3 Model B Plus Rev 1.3
+2. Raspbian GNU/Linux 9 (stretch)
+3. Python 3.5.3
+4. connectivity is via ethernet eth0
 
 ##### requirement / ask
 I have a need to test network connectivity and DNS functionality, every second, for long periods of time.  The rpi's raspbian OS cron is only granular to running processes, by the minute.  This application can be cron'd to run every minute, but will execute a ping, a reverse DNS lookup, and log the result every second.  The application does not run past the minute, noting cron will start yet another process at the top of the next minute.
